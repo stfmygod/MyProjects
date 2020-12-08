@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.android.mytictactoe.startPage.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_pvpFragment"
+            app:destination="@id/pvpFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_pvmFragment"
+            app:destination="@id/pvmFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pvpFragment"
+        android:name="com.example.android.mytictactoe.game.pvp.PvpFragment"
+        android:label="PvpFragment" >
+        <action
+            android:id="@+id/action_pvpFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pvmFragment"
+        android:name="com.example.android.mytictactoe.game.pvm.PvmFragment"
+        android:label="PvmFragment" >
+        <action
+            android:id="@+id/action_pvmFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.android.mytictactoe.statistics.StatisticsFragment"
+        android:label="StatisticsFragment" />
+</navigation>

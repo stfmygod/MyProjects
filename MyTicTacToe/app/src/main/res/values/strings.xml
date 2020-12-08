@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyTicTacToe</string>
+    <string name="x_value">X</string>
+    <string name="o_value">O</string>
+    <string name="welcome_to_mytictactoe">Welcome to MyTicTacToe!</string>
+    <string name="p1_vs_p2">P1 vs P2</string>
+    <string name="p_vs_ai">P vs AI</string>
+    <string name="statistics">Statistics</string>
+    <string name="statisticsString">Welcome to statistics!\n\nYou played %1$d PVP games.\nX won %2$d games and there were %3$d ties.\n\nYou played %4$d PVM games.\nYou won %5$d games and there were %6$d ties.</string>
+    <string name="initializing">Initializing...</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="pvpViewModel"
+            type="com.example.android.mytictactoe.game.pvp.PvpViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".game.pvp.PvpFragment"
+        android:background="@color/background">
+
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="45sp"
+            />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/Button9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textSize="45sp" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="Button1,Button2,Button3,Button4,Button5,Button6,Button7,Button8,Button9"
+            app:flow_horizontalGap="10dp"
+            app:flow_maxElementsWrap="3"
+            app:flow_verticalGap="10dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Chronometer
+            android:id="@+id/c_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flow"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play again"
+            app:layout_constraintBottom_toTopOf="@+id/Button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
