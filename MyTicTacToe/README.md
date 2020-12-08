@@ -17,6 +17,6 @@ This Android application implements the Tic-Tac-Toe game. It has 4 screens:
 The AI is written to always win or tie. The algorithm used for the AI is the miniMax algorithm to determine the "score" for a given move by simulating all the next possible moves.
 The algorithm will use the move with the highest score. Based on the simplicity of the game, this algorithm will help the AI to always win or tie.
 
-In the code there is an "easy mode" for the AI, that can easily be beaten. The algorithm will use a random possible move. This was implemented only to check if the AI works.
+In the code there is an "easy mode" for the AI, that can easily be beaten. The algorithm will use a random possible move. This was implemented only to check if the UI works.
 
 4. Statistics. - This page will show some statistics of the past games, stored in a database. 
